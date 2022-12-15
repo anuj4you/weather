@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-          Weather App 
+          Weather App - live interactive weather app!
         </p>
         
       </header>

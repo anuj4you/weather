@@ -1,3 +1,3 @@
 Weather App
 
-Live weather app!
+Live interactive weather app!
