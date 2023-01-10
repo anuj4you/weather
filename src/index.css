@@ -25,7 +25,12 @@ body {
 .backgroundMain {
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/coldBackground.jpg");
+  background: rgb(16, 57, 99);
+  background: linear-gradient(
+    0deg,
+    rgba(16, 57, 99, 1) 25%,
+    rgba(29, 131, 173, 1) 100%
+  );
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
@@ -35,13 +40,22 @@ body {
   align-items: center;
 }
 
-.backgroundMain.warm {
+.backgroundMainWarm {
+  background: rgb(125, 26, 26);
+  background: linear-gradient(
+    0deg,
+    rgba(125, 26, 26, 1) 25%,
+    rgba(241, 164, 31, 1) 100%
+  );
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/warmBackground.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
@@ -62,7 +76,7 @@ body {
   padding: 25px;
 }
 
-.h1{
+.h1 {
   font-weight: 600;
   font-size: 2.5rem;
 }
@@ -71,7 +85,6 @@ body {
   margin: 5px;
   padding: 5px;
   font-size: 1.5;
-
 }
 
 .searchBar {
@@ -131,7 +144,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .logo {
@@ -140,19 +152,17 @@ body {
   justify-content: center;
 }
 
-
-.result2{
+.result2 {
   margin-block: 2rem;
   display: grid;
-  grid-template-columns: repeat(2 , 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   align-items: center;
   color: white;
   padding-top: 1.1rem;
 }
 
-
-.detail{
+.detail {
   text-align: center;
   font-size: 1.2rem;
 }
@@ -162,14 +172,13 @@ body {
 @media screen and (max-width: 1200px) {
   * {
     font-size: 0.9rem;
-
   }
-  .h1{
+  .h1 {
     color: white;
     font-size: 2.5rem;
   }
 
-  .h2{
+  .h2 {
     font-size: 1.5rem;
   }
   .main {
