@@ -8,11 +8,21 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  color: aliceblue;
-
+  color: white;
 }
 
-.backgroundMain{
+.yellow {
+  color: #f5cd3f;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.boldFont {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.backgroundMain {
   height: 100vh;
   width: 100%;
   background-image: url("./assets/coldBackground.jpg");
@@ -23,7 +33,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .backgroundMain.warm {
@@ -35,66 +44,165 @@ body {
   transition: 0.4 ease;
 }
 
-.main{
-width: 42%;
-max-height: 70%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-  
-}
-
-
-.outputArea {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.164);
-  border-radius: 2rem;
+.main {
+  width: 42%;
+  max-height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.outputArea {
+  width: 93%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 2rem;
+
+  padding: 25px;
+}
+
+.h1{
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.h2 {
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.5;
+
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+
+  margin-block: 1rem;
+}
+
+.searchBar input {
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(208, 208, 208);
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.searchBar input:focus {
+  border-bottom: 1.5px solid white;
+}
+
+.searchBar input::placeholder {
+  opacity: 100%;
+  color: white;
+  padding: 6px;
+}
+
+.cityInfo {
+  display: flex;
+
+  justify-content: space-around;
+  margin: 1.5rem 0 0 0;
+  align-items: center;
+  height: 50px;
+  padding: 1rem;
+}
+
+.result1 {
+  padding: 3px 10px 3ps 10px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.result2{
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 2rem;
+  align-items: center;
+  color: white;
+  padding-top: 1.1rem;
+}
+
+
+.detail{
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 /* media queries */
 
-@media screen and (max-width:1200px){
-  *{
-      font-size: .9rem;
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 0.9rem;
+
   }
-  .main{
-      width: 33%;
-     }
+  .h1{
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .h2{
+    font-size: 1.5rem;
+  }
+  .main {
+    width: 33%;
+  }
 }
 
-@media screen and (max-width:875px){
- .main{
-  width: 35%;
- }
+@media screen and (max-width: 875px) {
+  .main {
+    width: 35%;
+  }
 }
 
-@media screen and (max-width:750px){
- .main{
-  width: 42%;
- }
+@media screen and (max-width: 750px) {
+  .main {
+    width: 42%;
+  }
 }
 
-@media screen and (max-width:650px){
- .main{
-  width: 58%;
- }
+@media screen and (max-width: 650px) {
+  .main {
+    width: 58%;
+  }
 }
 
-@media screen and (max-width:500px){
- .main{
-  width: 70%;
- }
+@media screen and (max-width: 500px) {
+  .main {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width:422px){
-  .main{
-   width:78%;
+@media screen and (max-width: 422px) {
+  .main {
+    width: 78%;
   }
 }
